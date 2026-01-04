@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Concesionaria</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Plus+Jakarta+Sans:wght@400;500&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    </head>
+    <body>
+
+        <section class="hero">
+
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1>Encontrá el auto que buscás</h1>
+                <p>Financiación exclusiva y la mejor toma de tu usado</p>
+
+                <div class="search-glass">
+                    <i class="ph ph-magnifying-glass search-icon"></i>
+                    <input type="text" id="buscador" class="search-input" placeholder="Busca tu próximo auto">
+                </div>
+            </div>
+        </section>
+
+        <main id="autos-container" class="grid-container">
+
+        </main>
+
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <span id="close-btn" class="close">&times;</span>
+                <div class="modal-body">
+                    <div class="modal-img-container">
+                        <img id="modal-img" src="" alt="Auto detalle">
+                    </div>
+                    <div class="modal-info">
+                        <h2 id="modal-title">Nombre del Auto</h2>
+                        <p class="modal-price" id="modal-price">$0</p>
+
+                        <div class="specs-grid">
+                            <p><strong>Año:</strong><span id="modal-year"></span></p>
+                            <p><strong>Km:</strong><span id="modal-km"></span></p>
+                            <p><strong>Combustible:</strong><span id="modal-fuel"></span></p>
+                            <p><strong>Dueño:</strong><span id="modal-owners"></span></p>
+                            <p><strong>Reparaciones:</strong><span id="modal-repairs"></span></p>
+                        </div>
+
+                        <button class="contact-btn">Consultar por este auto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AutoPremium</h3>
+                <p>Tu agencia de confianza. Calidad certificada y la mejor financiación.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contactanos</h3>
+                <p><i class="ph ph-phone"></i> 351 123-4567</p>
+                <p><i class="ph ph-map-pin"></i> Av. Colón 1234, Córdoba</p>
+            </div>
+            <div class="footer-section">
+                <h3>Seguinos</h3>
+                <p><i class="ph ph-instagram-logo"></i> @autopremium_cba</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 AutoPremium | Desing by Prisma UI</p>
+        </div>
+       </footer>
+
+       <div class="nav-container">
+        <nav class="dynamic-island-nav">
+            <a href="#" class="nav-item active" id="home-icon" onclick="cerrarModal()">
+                <i class="ph ph-house"></i>
+            </a>
+
+            <a href="#autos-container" class="nav-item"><i class="ph ph-car"></i></a>
+            <a href="#contacto" class="nav-item"><i class="ph ph-whatsapp-logo"></i></a>
+        </nav>
+       </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
